@@ -1,0 +1,1223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("../images/download (1).jpg");
+	background-size: cover;
+	display: flex;
+}
+/*main page*/
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header img {
+    width: 50px;
+    height: 50px;
+  }
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #999;
+}
+
+.mainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-image: url("https://images.unsplash.com/photo-1508615070457-7baeba4003e1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dm90aW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  margin-top: 80px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #444;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 15%;
+  text-align: center;
+}
+
+/* Add some animations and quotes */
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation-name:fade; 
+  animation-duration: 2s; 
+  animation-iteration-count :infinite; 
+  animation-direction :alternate; 
+  animation-timing-function :ease-in-out; 
+  animation-delay :.5s; 
+  animation-fill-mode :forwards; 
+  animation-play-state :running;
+}
+
+.card h3 {
+  font-style: italic;
+}
+/*Login css*/
+.error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.error span{
+	width: 100%;
+	height: 40px;
+	background: white;
+}
+.homeImg{
+	width: 100%;
+	min-height: 100vh;
+	transition: all 0.5s;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.navtop{
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	display: inline-flex;
+}
+.logo{
+	width: 40%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	display: inline-flex;
+	align-items: center;
+}
+.logo img{
+	width: 100px;
+	height: 60px;
+	border-radius: 50%;
+	padding: 10px;
+}
+.logo h2{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+.logoList{
+	width: 70%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+}
+.logoList ul{
+	margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.logoList li{
+	position: relative;
+	margin-top: 20px;
+}
+.logoList>ul>li {
+	white-space: nowrap;
+  padding: 10px 0 10px 22px;
+
+}
+.logoList a,
+.logoList a:focus {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  transition: 0.3s;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+}
+.logoList>ul>li>a:before{
+	content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #5c9f24;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.logoList a:hover:before,
+.logoList li:hover>a:before,
+.logoList .active:before {
+  visibility: visible;
+  width: 100%;
+}
+.logoList a:hover,
+.logoList .active,
+.logoList .active:focus,
+.logoList li:hover>a {
+  color: #fff;
+  background: none;
+  font-style: underline;
+}
+.homeImg .homePage{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+.dis{
+	display: inline-flex;
+	width: 100%;
+	height: 20%;
+}
+.dis .img1{
+	margin-top: -4px;	
+	width: 100%;
+	display: flex;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.50);
+}
+.homePage .below{
+	display: inline-flex;
+	width: 99%;
+	height: 200px;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+}
+.homePage .below img{
+	border-radius: 10px;
+}
+.homePage .below p{
+	margin-left: 10px;
+	font-size: 18px;
+}
+.dis .img1 img{
+	width: 100%;
+	background-size: cover;
+	height: 100%;
+}
+.homePage .election-view{
+	width: 100%;
+	height: 100px;
+}
+.login{
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	background: linear-gradient(115deg,#56d8e4 10%,#9f01ea 90%);
+	display: inline-block;
+}
+.login .login-page{
+	width: 40%;
+	height: auto;
+	background: lightsalmon;
+	text-align: center;
+	margin-left: 30%;
+	margin-top: 5%;
+	border-radius: 10px;
+}
+.login .login-page p{
+	font-size: 40px;
+	color: blue;
+	border: 1px solid;
+	border-radius: 10px;
+	text-align: center;
+	font-family: serif;
+}
+.login .login-page form{
+	width: 90%;
+	height: 100%;
+	margin-top: 20px;
+}
+.login .login-page .form-inputs{
+	margin: 40px;
+	width: 90%;
+	height: 50px;
+	border-radius: 10px;
+	background: #fff;
+	display: flex;
+}
+
+.login .login-page .form-inputs input{
+	width: 100%;
+	font-size: 18px;
+	border-radius: 10px;
+	background: #fff;
+}
+.login .login-page .error{
+	width: 90%;
+	height: 25px;
+	text-align: center;
+	margin-left: 8%;
+	border-radius: 5px;
+	background: lightsalmon;
+	margin-top: -40px;
+}
+.login .login-page .error span{
+	width: 100%;
+	height: 100%;
+	background: lightsalmon;
+	color: red;
+}
+.login .login-page .btn{
+	display: inline-flex;
+	height: 40px;
+	width: 90%;
+	margin: 20px;
+	text-align: center;
+}
+.login .login-page .btn input{
+	width: 100%;
+	height: 100%;
+	margin-left: 5%;
+}
+.login .login-page .btn a{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-left: 5%;
+	border: 1px solid #05f;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.login .login-page .btn button{
+	width: 100%;
+	height: 100%;
+	margin-left: 5%;
+}
+.login .login-page .btn button:hover{
+	cursor: pointer;
+	background: orange;
+	color: green;
+}
+.login .login-page .btn input:hover, a:hover{
+	cursor: pointer;
+	background: orangered;
+	color: green;
+}
+
+
+/*Sidebar css*/
+.side-bar{
+ background: #1b1a1b;
+ backdrop-filter: blur(15px);
+ width: 20%;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.side-bar.active{
+ left: 0;
+}
+.side-bar .menu{
+ width: 100%;
+ margin-top: 30px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+ background: #33363a;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: #262627;
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 80px;
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+.menu-btn{
+ position: absolute;
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+ margin: 25px;
+ cursor: pointer;
+}
+#header{
+	width: 100%;
+	height: 220px;
+  background: #b4b8b9;
+}
+#header img{
+  width: 120px;
+  margin: 20px;
+  height: 50%;
+  border-radius: 50%;
+  margin-left: 60px;
+  border: 3px solid #b4b8b9;
+}
+#header h1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+/*  padding-bottom: 13px;*/
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  margin-right: 40px;
+}
+/*Index page css*/
+.main{
+	width: 80%;
+	min-height: 100vh;
+	background: lightcyan;
+	display: flex;
+	margin-left: 20%;
+}
+.main .home{
+	height: 140px;
+	overflow: auto;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	border: 1px solid;
+	text-align: center;
+}
+.main .home .timer{
+	width: 99%;
+	height: 99%;
+	display: inline-flex;
+	align-items: center;
+} 
+.main .home .timer #days {  
+  font-size: 80px;  
+  color: #db4844;  
+  margin-right: 20px;
+}  
+.main .home .timer #hours {  
+  font-size: 70px;  
+  color: #f07c22;
+  margin-right: 20px;    
+}  
+.main .home .timer #minutes {  
+  font-size: 60px;  
+  color: #f6da74;
+  margin-right: 20px;   
+}  
+.main .home .timer #seconds {  
+  font-size: 50px;  
+  color: #abcd58; 
+  font-size: 30px;  
+} 
+.main .home .home-class{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+}
+.main .home .home-class img{
+	margin-top: 10px;
+	width: 100px;
+}
+.main .index{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(115deg,#56d8e4 10%,#9f01ea 90%);
+	display: inline-block;
+/*	margin-left: 20%;*/
+}
+.main .index .nav-top{
+	width: 98%;
+	height: 50px;
+	background: lightskyblue;
+	text-align: right;
+	display: flex;
+	margin: 10px;	
+}
+.main .index .nav-top ul{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	position: relative;
+}
+.main .index .nav-top ul a{
+	min-width: 10%;
+	height: 100%;
+	margin-left: 10px;
+	text-align: center;
+	
+	text-decoration: none;
+}
+.main .index .nav-top ul a li{
+	width: 100%;
+	height: 100%;
+}
+.main .index .nav-top ul a li{
+	font-size: 24px;
+	text-align: center;
+	margin-top: 10px;
+	list-style: none;
+}
+.main .index .btn{
+	width: 100%;
+	height: 100px;
+	background: lightseagreen;
+	display: inline-flex;
+}
+.main .index .btn a{
+	width: 20%;
+	height: 80%;
+	background: lightsalmon;
+	border: 1px solid;
+	border-radius: 20px;
+	margin-left: 40px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+.main .index .btn a .vote{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.main .index .btn a .vote p{
+	text-align: center;
+	font-size: 25px;
+	margin-top: 25px;
+}
+.main .index .control{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	margin-bottom: 50px;
+	align-items: center;
+}
+.main .index .control button{
+	width: 100px;
+	height: 80%;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.main .index .scrolmenu{
+	overflow: auto;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+}
+
+.main .index .can-list{
+	min-width: 100%;
+	background: lightsteelblue;
+	display: inline-flex;
+	align-items: start;	
+	white-space: nowrap;	
+}
+.main .index .can-list .cand{
+	width: 190px;
+	height: 240px;
+	border: 1px solid;
+	margin: 10px;
+	border-radius: 10px;
+}
+.main .index .can-list .cand p{
+	font-size: 16px;
+	text-align: center;
+	margin-top: 10px;
+}
+.main .index .can-list .cand #vote{
+	width: 99%;
+	height: auto;
+	border: 1px solid;
+	border-radius: 5px;
+	background: lightskyblue;
+	align-items: center;
+}
+.main .index .can-list .cand #vote p{
+	border-bottom: 1px solid;
+	height: 20%px;
+	width: 100%;
+}
+.main .index .can-list .cand #vote input{
+	width: 20%;
+	height: 20px;
+	margin-top: 5px;
+	align-items: center;
+	text-align: center;
+}
+.main .index .can-list .cand #vote button{
+	width: 75%;
+	height: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	color: blue;
+	align-items: center;
+	font-size: 18px;	
+}
+
+.main .index .can-list .cand .alignImg{
+	width: 100%;
+	height: 45%;
+	border-bottom: 1px solid;
+	display: inline-flex;
+}
+.main .index .can-list .cand .alignImg .votehide{
+	width: 15%;
+	border-radius: 50%;
+}
+.main .index .can-list .cand .alignImg .votehide img{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background: orangered;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.main .index .can-list .cand .alignImg .prof{
+	width: 65%;
+}
+.main .index .can-list .cand .alignImg .prof img{
+	width: 90%;
+	height: 80%;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/*.main .index .can-list .cand .alignImg .tick1{
+	width: 30px;
+	height: 30px;
+	margin-top:5%;
+	margin-left: -10%;
+	border-radius: 50%;
+	margin-left: 3%;
+	margin-top: -35%;
+	margin-right: 55%;
+}
+.main .index .can-list .cand .alignImg .prof{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: -54%;
+	margin-top: 10px;
+}
+.main .index .can-list .cand .alignImg .tick2{
+	width: 30px;
+	height: 30px;
+	margin-top: 5%;
+	margin-left: -10%;
+	border-radius: 50%;
+	margin-left: 5%;
+	margin-top: 5%;
+}*/
+.main .index .marq{
+	width: 100%;
+	height: 40px;
+	background: blanchedalmond;
+}
+.main .index .marq p{
+	font-size: 30px;
+}
+/*admin css*/
+.container .main .index .dash{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	border-top: 1px solid;
+}
+.container .main .index .dash p{
+	font-size: 24px;
+	margin: 5px;
+}
+.container .main .index .dashb{
+	width: 100%;
+	height: 50px;
+	background: gray;
+	display: flex;
+	border-top: 1px solid;
+}
+.container .main .index .dashb input{
+	width: 20%;
+	border-radius: 10px;
+	height: 40px;
+	margin-top: 5px;
+	font-size: 18px;
+	margin-left: 35%;
+}
+.container .main .index .dashb label{
+	font-size: 30px;
+	margin: 5px;
+}
+.container .main .index .box{
+	width: 22%;
+	height: 50px;
+	background: #fff;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 10px;	
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+.presidentResult{
+	width: 100%;
+	margin-left: 20px;
+	border-radius: 5px;
+	height: 40%;
+	background: lightgray;
+	border: 1px solid red;
+	display: block;
+}
+.presidentResult .left{
+	width: 100%;
+	height: 100%;
+	border: 1px solid;
+	margin-right: 20px;
+	display: block;
+}
+.presidentResult .row{
+	display: inline-flex; 
+	width: 100%; 
+	height: 100%;
+/*	padding: 10px;*/
+}
+.presidentResult .row .right{
+	width: 100%;
+	height: 100%;
+	border: 1px dashed;
+}
+.left .head{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid;
+}
+.left .row .content{
+	width: 100%;
+	height: 100%;
+}
+.left .row .content canvas{
+	width: 100%;
+	height: 100px;
+}
+.presidentResult .chart{
+	width: 100%;
+	height: 90%;
+	display: block;
+}
+.presidentResult .chart .names{
+	width: 100%;
+	height: 12%;
+	border-bottom: 1px solid;
+}
+.presidentResult .chart .president{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.presidentResult .chart .president canvas{
+	width: 90%;
+	height: 80%;
+}
+.presidentResult .chart .president .diagrams{
+	width: 60%;
+	border: 1px dashed;
+}
+.container .main .index .candAlign{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	border-bottom: 1px solid;
+}
+.container .main .index .box:hover{
+	background: lightcyan;
+	cursor: pointer;
+}
+.container .main .index .box #num{
+	width: 30%;
+	height: 100%;
+	align-items: center;
+}
+.container .main .index .box #num h3{
+	font-size: 18x;F
+	margin-top: 10px;
+
+}
+.container .main .index .box a{
+	text-decoration: none;
+	text-align: center;
+}
+.container .main .index .chart{
+	height: 40%;
+	width: 100%;
+	background: lightgoldenrodyellow;
+	margin-top: 20px;
+	display: inline-flex;
+}
+.container .main .index .chartVoter{
+	height: 40%;
+	width: 100%;
+	background: lightgoldenrodyellow;
+	margin-top: 20px;
+	display: inline-flex;
+}
+.container .main .index .chartVoter .countVoter{
+	width: 45%;
+	height: 100px;
+	margin: 10px;
+}
+.container .main .index .chartVoter .countVoter h2{
+	width: 100%;
+	height: 30px;
+	background: blueviolet;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.container .main .index .chartVoter .countVoter canvas{
+	width: 70%;
+	height: 50px;
+	padding: 10px;
+}
+.container .main .index .chart .count1{
+	width: 95%;
+	height: 90%;
+	border: 1px solid;
+	margin: 10px;
+}
+.container .main .index .chart .count1 h2{
+	width: 100%;
+	height: 30px;
+	background: blueviolet;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.container .main .index .chart .count1 .box-body{
+	width: 100%;
+	height: 80%;
+	background: lightsalmon;
+}
+.container .main .index .chart .count1 .box-body canvas{
+	width: 70%;
+	height: 50px;
+	padding: 10px;
+}
+.container .main .index .chart .count1 h4{
+	width: 30%;
+	height: auto;
+	border: 1px solid;
+	margin-bottom: 10px;
+}
+.party-top{
+	width: 100%;
+	height: 8%;
+	margin-top: 10px;
+	background: lightslategray;
+}
+.party-top p{
+	font-size: 40px;
+	text-align: center;
+	font-family: cursive;
+}
+.party{
+	width: 100%;
+	height: auto;
+	margin: 10px;
+	display: inline-block;
+}
+.party table{
+	width: 98%;
+	height: 100%;
+	border: 1px solid;
+}
+.party table tr{
+	width: 100%;
+	height: 30px;
+	border-right: 1px solid;
+}
+.party table tr th{
+	border: 1px solid blue;
+	height: 30px;
+	font-size: 24px;
+	background: blueviolet;
+}
+.party table tr td{
+	border: 1px solid;
+	height: 30px;
+	background: #c0c0c0;
+}
+.party1{
+	width: 90%;
+	height: auto;
+	margin: 10px;
+	display: inline-block;
+}
+
+.party1 table{
+	width: 98%;
+	height: 100%;
+	border: 1px solid;
+}
+.party1 table tr{
+	width: 100%;
+	height: 30px;
+	border-right: 1px solid;
+}
+.party1 table tr th{
+	border: 1px solid blue;
+	height: 30px;
+	font-size: 24px;
+	background: blueviolet;
+}
+.party1 table tr td{
+	border: 1px solid;
+	height: 30px;
+	background: #c0c0c0;
+}
+.party button{
+	background: green;
+	width: 30%;
+}
+.party button:hover{
+	cursor: pointer;
+}
+.position{
+	width: 50%;
+	height: auto;
+	border: 1px solid;
+	margin-left: 10px;
+	display: inline-block;
+	border-radius: 5px;
+}
+.position h2{
+	text-align: center;
+	border-bottom: 1px solid;
+}
+.position label{
+	font-size: 24px;
+	margin-top: 5px;
+}
+.position label,
+.position input{	
+	margin: 10px;	
+}
+.position input{
+	margin-top: 5px;
+	width: 90%;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.position button{
+	width: 50%;
+	margin-left: 10px;
+	height: 30px;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.position button:hover{
+	background: blue;
+}
+.party label{
+	width: auto;
+	height: 30px;
+	font-size: 24px;
+	margin: 10px;
+}
+.party select{
+	margin: 10px;
+}
+
+
+/*footer{
+	width: 100%;
+	height: 30px;
+	background: lightcyan;
+}
+footer p{
+	font-size: 24px;
+	text-align: center;
+}*/
+
+/*add party form*/
+.main .index .candidate{
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+}
+.main .index .candidate .pres{
+	width: 30%;
+	height: 40%;
+	border: 1px solid;
+	border-radius: 5px;
+}
+.main .index .candidate .pres a{
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 30px;
+}
+.main .index .candidate .pres a h2{
+	margin-left: 10px;
+}
+.main .index .candidate .govt{
+	width: 60%;
+	height: auto;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.main .index .candidate .govt .myDiv{
+	width: 100%;
+	height: auto;
+}
+/*.main .index .candidate .govt .myDiv form{
+	width: 100%;
+	height: 100%;
+}
+*/
+.main .index .form-data{
+	width: 60%;
+	background: #fff;
+	border: 1px solid;
+	margin-left: 15%;
+	top: 10%;
+	left:30%;
+	border-radius: 10px;
+}
+.form-data p{
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+	border-bottom: 1px solid;
+}
+.form-data .form-entry{
+	width: 100%;
+	height: auto;
+	margin: 20px 10px;
+	border-radius: 10px;
+}
+.form-data .form-entry label{
+	width: 100%;
+	height: 20px;
+	font-size: 18px;
+}
+.form-data .form-entry input,select{
+	width: 90%;
+	height: 30px;
+	margin-top: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.form-data .form-entry .btn-submit{
+	width: 100%;
+	height: 30px;
+	margin: 20px 10px;
+}
+.form-data .form-entry .btn-submit:hover{
+	cursor: pointer;
+}
+/*.form-data .form-entry .btn-submit:hover{
+	cursor: pointer;
+}*/
+.form-data .form-entry .msg{
+	width: 100%;
+	height: 30px;
+}
+.form-data .form-entry .msg p{
+	color: red;
+}
+
+
+/*candidate--- index page*/
+.advert{
+	width: 100%;
+	height: 150px;
+	background: red;
+}
+.list-all{
+	width: 100%;
+	height: 220px;
+	background: #fff;
+	display: flex;
+}
+.list-all .president{
+	width: 20%;
+	height: 100%;
+	border: 1px solid;
+	align-items: center;
+	margin-left: 10px;
+}
+.list-all .president img{
+	width: 60%;
+	height: 60%;
+	margin-right: -20px;
+}
+.presDiv{
+	width: 100%;
+	height: 100%;
+	background: lightskyblue;
+}
+.presDiv .title h2{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid;
+}
+.presDiv .content{
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+}
+.presDiv .content .canName{
+	width: 30%;
+	height: 100%;
+}
+.presDiv .content canvas{
+	width: 100%;
+	height: 100px;
+}
+.viewDetails{
+	width: 60%;
+	height: 150px;
+	border: 1px solid;
+	border-radius: 5px;
+	display: inline-block;
+}
+.viewDetails label{
+	font-size: 24px;
+	font-style: italic;
+}
+/*count down time*/
+.home .countdown{
+	width: 99.9%; /* Set the width of the div */
+  height: 99%; /* Set the height of the div */
+  border: 1px solid black; /* Add a border to the div */
+  display: flex; /* Use flexbox to align the content */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+.home .countdown p{
+	font-size: 36px; /* Set the font size of the timer */
+  font-weight: bold; /* Make the timer bold */
+}
+input{
+	padding: 5px;
+}
+.part{
+	height: auto;
+	width: 60%;
+	border: 1px solid;
+}
+.part table{
+	width: 98%;
+	height: auto;
+	border: 1px solid;
+}
+.part table tr{
+	width: 100%;
+	height: 30px;
+	border-right: 1px solid;
+}
+.part table tr th{
+	border: 1px solid blue;
+	height: 30px;
+	font-size: 24px;
+	background: blueviolet;
+}
+.part table tr td{
+	border: 1px solid;
+	height: 30px;
+	background: #c0c0c0;
+}
